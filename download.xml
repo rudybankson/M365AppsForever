@@ -1,0 +1,17 @@
+<Configuration ID="8072d0c9-1514-4bac-8eaf-72c8b501676a" Host="cm">
+ <Info Description="Monthly Enterprise channel download xml for all apps" />
+ <Add OfficeClientEdition="64" Channel="Current" OfficeMgmtCOM="TRUE" MigrateArch="TRUE" AllowCdnFallback="True">
+ <Product ID="O365ProPlusRetail">
+ <Language ID="en-us" />
+ <ExcludeApp ID="Groove" />
+ <ExcludeApp ID="Lync" />
+ </Product>
+  <Product ID="VisioProRetail">
+ <Language ID="en-us" />
+ </Product>
+  <Product ID="ProjectProRetail">
+ <Language ID="en-us" />
+ </Product>
+ </Add>
+ <Display Level="None" AcceptEULA="TRUE" />
+</Configuration>

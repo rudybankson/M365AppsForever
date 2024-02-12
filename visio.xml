@@ -1,0 +1,11 @@
+<Configuration ID="8072d0c9-1514-4bac-8eaf-72c8b501676a" Host="cm">
+ <Info Description="Current channel Visio uninstall all MSI" />
+	<Add Version="MatchInstalled" AllowCdnFallback="True" OfficeClientEdition="64" Channel="Current" OfficeMgmtCOM="TRUE">
+		<Product ID="VisioProRetail">
+			<Language ID="MatchInstalled" TargetProduct="All" />
+		</Product>
+	</Add>
+ <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+ <RemoveMSI />
+ <Display Level="None" AcceptEULA="TRUE" />
+</Configuration>

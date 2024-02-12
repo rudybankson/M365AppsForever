@@ -1,0 +1,20 @@
+<Configuration ID="8072d0c9-1514-4bac-8eaf-72c8b501676a" Host="cm">
+ <Info Description="Current channel Upgrade Architecture if needed and uninstall all MSI" />
+ <Add OfficeClientEdition="64" Channel="Current" OfficeMgmtCOM="TRUE" MigrateArch="TRUE" AllowCdnFallback="True">
+ <Product ID="O365ProPlusRetail">
+ <Language ID="en-us" />
+ <ExcludeApp ID="Groove" />
+ <ExcludeApp ID="Lync" />
+ <ExcludeApp ID="Bing" />
+ </Product>
+ </Add>
+ <Property Name="FORCEAPPSHUTDOWN" Value="TRUE" />
+ <RemoveMSI />
+ <AppSettings>
+ <Setup Name="Company" Value="Contoso Corp" />
+ <User Key="software\microsoft\office\16.0\common\general" Name="shownfirstrunoptin" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOptinWizard" />
+ <User Key="software\microsoft\office\16.0\firstrun" Name="disablemovie" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableMovie" />
+ <User Key="software\microsoft\office\16.0\firstrun" Name="bootedrtm" Value="1" Type="REG_DWORD" App="office16" Id="L_DisableOfficeFirstrun" />
+ </AppSettings>
+ <Display Level="None" AcceptEULA="TRUE" />
+</Configuration>
