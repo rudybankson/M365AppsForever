@@ -20,10 +20,10 @@ to rework that much yet.
 #  download the XML files, this script will download my defaults for you, and the only thing wonky
 #  will be the ORG NAME showing up as Contoso. This will be the "template" that copies over files
 #  to your monthly build.
-$TemplateUNC = "\\YourFileServer\software\SCCM\Applications\Microsoft\Office365\OfficeM365_Forever\" 
+$TemplateUNC = "\\YourFileServer\software\SCCM\Applications\Microsoft\Office365\OfficeM365_Forever\"  #This script is touchy... put a \ at the end of the UNC or it won't work right.
 
 #  This folder should just be one level up from your "Forever" folder (above) which contains your "templates".
-$OfficeRoot = "\\YourFileServer\software\SCCM\Applications\Microsoft\Office365\"
+$OfficeRoot = "\\YourFileServer\software\SCCM\Applications\Microsoft\Office365\" #This script is touchy... put a \ at the end of the UNC or it won't work right.
 
 #  This is going to be all of your SCCM site info
 $SiteCode = "A01"
